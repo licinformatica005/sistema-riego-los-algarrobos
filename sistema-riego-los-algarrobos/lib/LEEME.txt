@@ -1,0 +1,15 @@
+Carpeta de bibliotecas (JAR) del proyecto.
+
+Para conectar Java con MySQL se necesita un conector JDBC en el classpath:
+
+OPCIÓN A (recomendada) - Conector oficial de MySQL
+  1. Descargar "Connector/J" (Platform Independent) desde https://dev.mysql.com/downloads/connector/j/
+  2. Descomprimir y copiar el archivo mysql-connector-j-X.Y.Z.jar a esta carpeta.
+  3. Agregarlo como biblioteca al proyecto del IDE (NetBeans: Libraries > Add JAR/Folder;
+     IntelliJ: File > Project Structure > Libraries > +; Eclipse: Build Path > Add External JARs).
+  4. Dejar activa la línea "Opción A" de conexion.properties.
+
+OPCIÓN B - Conector MariaDB (incluido: mariadb-java-client-2.7.6.jar)
+  Funciona con XAMPP (MariaDB) y con MySQL. Es la combinación con la que se probó el prototipo.
+  1. Agregar mariadb-java-client-2.7.6.jar como biblioteca al proyecto del IDE (mismos pasos).
+  2. En conexion.properties comentar la línea "Opción A" y activar la "Opción B".
